@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+joblib
+nltk
+wordcloud
+matplotlib
+snscrape
+pydantic
+seaborn
+transformers
+torch
