@@ -1,9 +1,4 @@
-fastapi
-uvicorn
+gradio
+scikit-learn
 pandas
 numpy
-scikit-learn
-joblib
-transformers
-torch
-matplotlib
