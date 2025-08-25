@@ -1,0 +1,19 @@
+services:
+  # --- Backend API (FastAPI) ---
+  - type: web
+    name: sentiment-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+
+  # --- Frontend (Static Site) ---
+  - type: web
+    name: sentiment-frontend
+    runtime: static
+    rootDir: frontend
+    staticPublishPath: .
